@@ -1,0 +1,151 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_tiiphH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bpfkaW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Payment",
+            "heading_size": "h1"
+          }
+        },
+        "text_hMQqLC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For your convenience, we offer multiple payment methods for domestic orders that are secure and encrypted.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bpfkaW",
+        "text_hMQqLC"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_d9mAc9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PJpqLy": {
+          "type": "heading",
+          "settings": {
+            "heading": "Cash on Delivery (Domestic Orders only)",
+            "heading_size": "h1"
+          }
+        },
+        "text_aighi6": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>COD is available for nationwide orders.</li><li>You will have to pay the required amount in cash at the time of the delivery to the courier, and will be provided with a receipt along with your purchase.</li><li>Please cross verify your order number received with your order confirmation email against the receipt.</li><li>There are no additional charges for Cash on Delivery orders.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_PJpqLy",
+        "text_aighi6"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_MdTjJd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_J4xxkG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Online Payments - Easypaisa/ Debit Card/ Credit Card (Domestic Orders)",
+            "heading_size": "h1"
+          }
+        },
+        "text_xRzFje": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>We offer end to end encrypted Easy Paisa / Debit card / Credit card payments. Our payment gateways are authenticated and verified by 3-D secure. 3-D Secure is a protocol designed to be an additional security layer for online credit and debit card transactions.</li><li>You will be redirected to Easy Paisa safe payment gateway to make payments via the following Easy paisa / Debit / credit cards.</li></ul><p>o Easy Paisa Mobile Account</p><p>o VISA</p><p>o MASTER</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_J4xxkG",
+        "text_xRzFje"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_em8LAf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cGRF7p": {
+          "type": "heading",
+          "settings": {
+            "heading": "Delivery within Pakistan",
+            "heading_size": "h1"
+          }
+        },
+        "text_fL7nDC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All orders within Pakistan are routed through Trax courier services. All our domestic clients will be provided with a tracking ID when the order is dispatched.<br/>Upon placing an order, you will receive a verification call or SMS from our Customer Service to confirm the order. If you fail to verify, your order will be automatically cancelled after 3 days (only applicable to purchases made through Cash on Delivery method). Once the order is verified, it will be dispatched within 1-2 working days and will be delivered to you within 4-5 working days.</p><p>We offer free delivery on orders above Rs.2000 within Pakistan.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cGRF7p",
+        "text_fL7nDC"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_tiiphH",
+    "rich_text_d9mAc9",
+    "rich_text_MdTjJd",
+    "rich_text_em8LAf"
+  ]
+}

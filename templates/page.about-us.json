@@ -1,0 +1,120 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_bNRELQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_QK8nti": {
+          "type": "heading",
+          "settings": {
+            "heading": "HEY, WE’RE ROOP",
+            "heading_size": "h1"
+          }
+        },
+        "text_dzAnhq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Welcome to <strong>Roop Luxury Cosmetics</strong>, your new favorite spot for genuine, high-end beauty. Started in June 2026, Roop was created to solve a common problem: making it easy and safe to buy real luxury makeup and skincare.</p><p>We don’t just fill our shelves with random items. Our team does the homework for you, testing and picking out only the absolute best products from top brands. Most importantly, we buy directly from the brands and their official distributors, and we have the official letters to prove it. At Roop Luxury Cosmetics, we bring the world's best beauty together in one place, so you can shop with total peace of mind.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QK8nti",
+        "text_dzAnhq"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_RGHYUY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kexNGT": {
+          "type": "heading",
+          "settings": {
+            "heading": "OUR MISSION",
+            "heading_size": "h1"
+          }
+        },
+        "text_dGP3gK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our mission is simple: to be the one trusted shop where you can find 100% real luxury cosmetics. We want to protect you from fake products, save you the time of looking all over the internet, and lower your shipping costs by putting everything you love in one single package.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kexNGT",
+        "text_dGP3gK"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_cFNXkU": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wXBiCd": {
+          "type": "heading",
+          "settings": {
+            "heading": "WHY SHOP WITH US?",
+            "heading_size": "h1"
+          }
+        },
+        "text_7Bzxa8": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>100% Real, Always</strong></p><p>We have a zero-tolerance rule for fake or copy products. Every single item comes straight from the source with official authorization.</p><p><strong>See the Proof Yourself</strong></p><p>We believe in complete honesty. On every single product page, you can click the <strong>\"View Authenticity Proof\"</strong> button to see the official brand authorization letter we received.</p><p><strong>Only the Best Stuff</strong></p><p>We do the research so you don't have to. We only pick the top-performing, most-loved products from each brand's collection.</p><p><strong>Saves You Time and Money</strong></p><p>Instead of buying from five different stores and paying five shipping fees, you can get all your favorite brands right here in one go.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wXBiCd",
+        "text_7Bzxa8"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_bNRELQ",
+    "rich_text_RGHYUY",
+    "rich_text_cFNXkU"
+  ]
+}

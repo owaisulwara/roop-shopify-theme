@@ -1,0 +1,304 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_qr4qDj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_iYaTiF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Privacy Policy:",
+            "heading_size": "h1"
+          }
+        },
+        "text_YJH6eY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Roop's top priority is your privacy protection when dealing with us. To safeguard your trust, we have a policy that recognizes the importance of protecting your personal information; explaining what personal information constitutes, how we use the information, who has access to your data, and what are your rights regarding your personal information.; This Privacy Policy does not apply to websites maintained by other companies or organizations to which we link and Roop is not responsible for any personal information you submit to third parties via our website. Please ensure that you read the Privacy Policy of such other companies or organizations before submitting your details. Your access and use of roop.com.pk constitute your acceptance of our Privacy Policy and Terms of Use.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_iYaTiF",
+        "text_YJH6eY"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_3PAtbb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jrW6Hp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Use of Information",
+            "heading_size": "h1"
+          }
+        },
+        "text_K3iaRB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Roop collects personal information in several ways when you place an order or make an account with roop.com.pk. By registering, you are consenting to the collection of your personal data. If an order is placed with us, we need to hold personal information including your name, email address, phone numbers, home address, shipping and credit/debit card billing address (es) for the purpose of order process. Saved card details will never be shared with third parties and will only be used to process your order, using our Payment Service provider's systems. We may also obtain information as a result of authentication or identity checks which may contain your telephone number. This number may be given to our courier for delivery services. These details allow us to process your order and to let you know the status of your order. Rest assured, your personal information is protected by an additional security layer called SSL which ensures your sensitive information is transmitted securely through an encrypted link. We also use non-personal data such as third-party cookies to collect statistics to enhance and simplify your visit. The cookies used are both permanent and temporary cookies (session cookies). The permanent cookies are stored on your computer or mobile device for no longer than 24 months. You can easily erase cookies from your computer or mobile device using your browser.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jrW6Hp",
+        "text_K3iaRB"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_hxxzJ8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_c9pREG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Information Collection",
+            "heading_size": "h1"
+          }
+        },
+        "text_nh8Vw6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Roop may use your personal data for the following purposes:</p><ul><li>To create your personal account at roop.com.pk (e.g. your name and email address)</li><li>To process your orders (e.g. your name, address and date of birth)</li><li>To be able to send text message notifications of delivery status (e.g. your mobile phone number)</li><li>To be able to send you marketing offers such as newsletters and our catalogues (e.g. your email address, wish lists, your name and your postal address)</li><li>To be able to contact you in the event of any problem with the delivery of your items (e.g. telephone number, address)</li><li>To enable us to answer your queries and to inform you of new or changed services (e.g. your email address)</li><li>To notify the winners in promotions (e.g. your email address, name, home address and telephone number)</li><li>Managing your account by carrying out credit checks (e.g. name, address, date of birth)</li><li>Disclosing your data to fraud prevention agencies.</li><li>To be able to analyze your personal data to provide you with relevant marketing offers and information (e.g. name, buying habits)</li><li>To be able to validate that you are of legal age for shopping online (e.g. date of birth)</li></ul><p> </p><p>We will only keep your data for as long as necessary to carry out our services to you or as long as we are required by law. After this your personal data will be deleted. We cannot remove your data when there is a legal storage requirement, such as book keeping rules or when there is a legal ground to keep the data, such as an on-going contractual relationship.</p><p>Non-personal data is used as described above and in other ways as permitted by applicable laws, including combining non-personal data with personal data. Lastly, we do not sell your details to third party marketing companies.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_c9pREG",
+        "text_nh8Vw6"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_af3BQf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_de6mQF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Marketing Updates",
+            "heading_size": "h1"
+          }
+        },
+        "text_qqwUG8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We email our users who subscribe to our services on a regular basis. For example, we may use your email address to confirm your request, to send you notice of payments, information about changes to our products and services, and notices and other disclosures as required by law. Generally, users cannot opt-out of these communications, but they will be primarily informational in nature rather than promotional. However, we provide you the opportunity to exercise an opt-out choice if you do not want to receive other types of communication from us, such as emails or updates from us regarding new services and products offered on the websites. The opt-out choice may be exercised by ticking or un-ticking the appropriate box if such checkbox is available at the points where personal data is collected or by contacting our customer care center at care@roop.com.pk. We will process your unsubscribe as soon as possible, but please be aware that in some circumstances you may receive a few more messages until the unsubscribe is processed. You also may opt-out of receiving such emails by clicking on the ‘unsubscribe’ link within the text of the email. By using the websites and providing your mobile phone number, you hereby consent to receive autodialed and/or pre-recorded telemarketing calls and text messages from or on behalf of us at the mobile number that you provide at sign-up. You understand that consent to receiving messages on your mobile device is not a condition of purchase and understand that message and data rates may apply. Additionally, should you choose to stop receiving such messages, you can contact us directly at care@roop.com.pk<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_de6mQF",
+        "text_qqwUG8"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_pzxkXe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_hM8ceX": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your Rights",
+            "heading_size": "h1"
+          }
+        },
+        "text_P6tetN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You have the right to request information about the personal data we hold on you. If your data is incorrect, incomplete or irrelevant you can ask to have the information corrected or removed. If you require more information please send an email to<a href=\"mailto:contact@shebeauty.com.pk\"> </a>care@roop.com.pk.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hM8ceX",
+        "text_P6tetN"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_Hy8PYV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_b3NUUc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Third Party Applications/ Websites",
+            "heading_size": "h1"
+          }
+        },
+        "text_iPxGNQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Application may permit you to link to other applications or websites. Such third party applications/websites are not under Roop’s control, and such links do not constitute an endorsement by Roop of those other applications/websites or the services offered through them. The privacy and security practices of such third party application/websites linked to the Application are not covered by this Privacy Statement, and Roop is not responsible for the privacy or security practices or the content of such websites.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_b3NUUc",
+        "text_iPxGNQ"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_kmzNGM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_zTJUKM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Changes to this Privacy Statement",
+            "heading_size": "h1"
+          }
+        },
+        "text_XgXzpQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Roop may amend this Privacy Statement from time to time. Use of information we collect now is subject to the Privacy Statement in effect at the time such information is used. If we make changes in the way we use personal information, we will notify you by posting an announcement on our Site or sending you an email. Users are bound by any changes to the Privacy Statement when he or she uses or otherwise accesses the Application after such changes have been first posted.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_zTJUKM",
+        "text_XgXzpQ"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_TYKYn8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_YdrwGp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Questions or Concerns",
+            "heading_size": "h1"
+          }
+        },
+        "text_p7TBGe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you have any questions or concerns regarding privacy on our Website, please send us a detailed message at care@roop.com.pk. We will make every effort to resolve your concerns.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_YdrwGp",
+        "text_p7TBGe"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_PqRRfb": {
+      "type": "rich-text",
+      "blocks": {
+        "text_4cAi3V": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Effective Date: June 1, 2026</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_4cAi3V"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_qr4qDj",
+    "rich_text_3PAtbb",
+    "rich_text_hxxzJ8",
+    "rich_text_af3BQf",
+    "rich_text_pzxkXe",
+    "rich_text_Hy8PYV",
+    "rich_text_kmzNGM",
+    "rich_text_TYKYn8",
+    "rich_text_PqRRfb"
+  ]
+}
