@@ -84,14 +84,16 @@
             {% endif %}
           >
             <span>
-            {%- if product.metafields.custom.coming_soon.value == true -%}
-              Coming Soon
-            {%- elsif product.selected_or_first_available_variant == null -%}
+              {%- if product.metafields.custom.coming_soon.value == true -%}
+                Coming Soon
+              {%- elsif product.selected_or_first_available_variant == null -%}
                 {{ 'products.product.unavailable' | t }}
               {%- elsif product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
                 {{ 'products.product.sold_out' | t }}
-              {% comment %} {%- elsif product.selected_or_first_available_variant.inventory_quantity < 0 -%}
-                Pre Order Now {% endcomment %}
+                {% comment %}
+                  {%- elsif product.selected_or_first_available_variant.inventory_quantity < 0 -%}
+                  Pre Order Now
+                {% endcomment %}
               {%- else -%}
                 {{ 'products.product.add_to_cart' | t }}
               {%- endif -%}
@@ -100,6 +102,21 @@
           </button>
           {%- if show_dynamic_checkout and product.metafields.custom.coming_soon.value != true -%}
             {{ form | payment_button }}
+            <script>
+              (function () {
+                function relabelBuyNow() {
+                  document.querySelectorAll('.shopify-payment-button__button--unbranded').forEach(function (btn) {
+                    if (btn.textContent.trim() !== 'Order it now') {
+                      btn.textContent = 'Order it now';
+                    }
+                  });
+                }
+                // Run once the DOM settles, then watch for late renders
+                setTimeout(relabelBuyNow, 300);
+                var observer = new MutationObserver(relabelBuyNow);
+                observer.observe(document.body, { childList: true, subtree: true });
+              })();
+            </script>
           {%- endif -%}
         </div>
       {%- endform -%}
