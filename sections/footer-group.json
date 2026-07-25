@@ -24,15 +24,15 @@
         "link_list_F6FAe4": {
           "type": "link_list",
           "settings": {
-            "heading": "Help & Information",
-            "menu": "help-information"
+            "heading": "Our Company",
+            "menu": "our-company"
           }
         },
         "link_list_YcGqP8": {
           "type": "link_list",
           "settings": {
-            "heading": "Reach Us",
-            "menu": "reach-us"
+            "heading": "Policies",
+            "menu": "policies"
           }
         },
         "text_MtYpCW": {

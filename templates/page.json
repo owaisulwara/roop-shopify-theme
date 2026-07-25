@@ -15,9 +15,74 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "multicolumn_7hhp94": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_keqyKd": {
+          "type": "column",
+          "settings": {
+            "title": "She Beauty",
+            "text": "<p>Backed by official brand certification and sourced directly from the brand or their official distributor.</p>",
+            "link_label": "View",
+            "link": "shopify://pages/she-beauty-authorization-letter"
+          }
+        },
+        "column_QxRN8g": {
+          "type": "column",
+          "settings": {
+            "title": "Kleen Skin USA",
+            "text": "<p>Backed by official brand certification and sourced directly from the brand or their official distributor.</p>",
+            "link_label": "View",
+            "link": "shopify://pages/kleen-skin-usa-authorization-letter"
+          }
+        },
+        "column_azPAaU": {
+          "type": "column",
+          "settings": {
+            "title": "Rivaj UK",
+            "text": "<p>Guaranteed 100% authentic products sourced directly from the brand or their official distributor. Documentation verification is currently in progress.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_LcjyrK": {
+          "type": "column",
+          "settings": {
+            "title": "Glamourous Face",
+            "text": "<p>Guaranteed 100% authentic products sourced directly from the brand or their official distributor. Documentation verification is currently in progress.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_keqyKd",
+        "column_QxRN8g",
+        "column_azPAaU",
+        "column_LcjyrK"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Authenticity Assured",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "multicolumn_7hhp94"
   ]
 }
