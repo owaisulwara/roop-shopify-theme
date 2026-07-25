@@ -188,7 +188,8 @@
               </ul>
 
               {%- if paginate.pages > 1 -%}
-                {% render 'pagination', paginate: paginate, anchor: '' %}
+                {% comment %} {% render 'pagination', paginate: paginate, anchor: '' %} {% endcomment %}
+                {% render 'loadmore', paginate: paginate, collection: collection %}
               {%- endif -%}
             </div>
           {%- endif -%}

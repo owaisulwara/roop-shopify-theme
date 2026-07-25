@@ -1,0 +1,97 @@
+<script src="{{ 'jquery-3.7.1.min.js' | asset_url }}" defer></script>
+
+<script src="{{ 'wd-loadmore.js' | asset_url }}" defer></script>
+
+<style>
+  /* Layout utilities (Dawn doesn't include Tailwind) */
+  .flex {
+    display: flex;
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .flex-row {
+    flex-direction: row;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .mr-3 {
+    margin-right: 0.75rem;
+  }
+
+  /* Spinner */
+  .loading-overlay__spinner {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-flex;
+    flex-shrink: 0;
+  }
+  .spinner {
+    width: 100%;
+    height: 100%;
+    animation: rotator 1.4s linear infinite;
+  }
+  @keyframes rotator {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(270deg);
+    }
+  }
+  .path {
+    stroke-dasharray: 280;
+    stroke-dashoffset: 0;
+    transform-origin: center;
+    stroke: rgb(var(--color-foreground));
+    animation: dash 1.4s ease-in-out infinite;
+  }
+  @keyframes dash {
+    0% {
+      stroke-dashoffset: 280;
+    }
+    50% {
+      stroke-dashoffset: 75;
+      transform: rotate(135deg);
+    }
+    100% {
+      stroke-dashoffset: 280;
+      transform: rotate(450deg);
+    }
+  }
+
+  /* Loading row */
+  .reached__to__end {
+    margin: 0;
+    font-size: 1.4rem;
+    color: rgba(var(--color-foreground), 0.6);
+    line-height: 1;
+  }
+</style>
+
+{% if paginate.parts.size > 0 %}
+  <input type="hidden" value="{{ paginate.next.url }}" data-next-link>
+  <input type="hidden" value="{{ paginate.pages }}" data-all-pages>
+  <input type="hidden" value="{{ paginate.current_page }}" data-this-page>
+  <input type="hidden" value="{{ collection.url }}" data-coll-url>
+
+  <div class="flex flex-1 flex-row items-center justify-center">
+    <div class="loading-overlay__spinner mr-3" loader>
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        role="presentation"
+        class="spinner"
+        viewBox="0 0 66 66"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+      </svg>
+    </div>
+    <p class="reached__to__end" style="text-align: center"></p>
+  </div>
+{% endif %}
