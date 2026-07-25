@@ -128,28 +128,28 @@
             </div>
             <div class="card__badge {{ settings.badge_position }}">
               {%- unless card_product.metafields.custom.coming_soon.value == true -%}
-              {%- if card_product.available == false -%}
-                <span
-                  id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
-                  class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}"
-                >
-                  {{- 'products.product.sold_out' | t -}}
-                </span>
-              {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
-                <span
-                  id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
-                  class="badge badge--bottom-left badge--sale color-{{ settings.sale_badge_color_scheme }}"
-                >
-                  {{-
-                    card_product.compare_at_price
-                    | minus: card_product.price
-                    | times: 100.0
-                    | divided_by: card_product.compare_at_price
-                    | floor
-                  -}}
-                  % OFF
-                </span>
-              {%- endif -%}
+                {%- if card_product.available == false -%}
+                  <span
+                    id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+                    class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}"
+                  >
+                    {{- 'products.product.sold_out' | t -}}
+                  </span>
+                {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
+                  <span
+                    id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+                    class="badge badge--bottom-left badge--sale color-{{ settings.sale_badge_color_scheme }}"
+                  >
+                    {{-
+                      card_product.compare_at_price
+                      | minus: card_product.price
+                      | times: 100.0
+                      | divided_by: card_product.compare_at_price
+                      | floor
+                    -}}
+                    % OFF
+                  </span>
+                {%- endif -%}
               {%- endunless -%}
             </div>
           </div>
@@ -298,6 +298,38 @@
                 {% endif %}
               {%- endif -%}
             </div>
+
+            {%- if card_product.variants.size > 1 -%}
+              {%- liquid
+                assign max_swatches = 3
+                assign swatch_count = 0
+              -%}
+              <div class="card-variant-strip">
+                {%- for variant in card_product.variants -%}
+                  {%- if swatch_count < max_swatches and variant.featured_media -%}
+                    <a
+                      href="{{ card_product.url }}?variant={{ variant.id }}"
+                      class="card-variant-swatch"
+                      title="{{ variant.title | escape }}"
+                      tabindex="-1"
+                    >
+                      <img
+                        src="{{ variant.featured_media | image_url: width: 80 }}"
+                        alt="{{ variant.title | escape }}"
+                        width="40"
+                        height="40"
+                        loading="lazy"
+                      >
+                    </a>
+                    {%- assign swatch_count = swatch_count | plus: 1 -%}
+                  {%- endif -%}
+                {%- endfor -%}
+                {%- assign remaining = card_product.variants.size | minus: swatch_count -%}
+                {%- if remaining > 0 -%}
+                  <a href="{{ card_product.url }}" class="card-variant-more" tabindex="-1">+{{ remaining }}</a>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
           </div>
           {% assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id %}
           {% if quick_add == 'standard' %}
@@ -567,28 +599,28 @@
           {% endif %}
           <div class="card__badge {{ settings.badge_position }}">
             {%- unless card_product.metafields.custom.coming_soon.value == true -%}
-            {%- if card_product.available == false -%}
-              <span
-                id="Badge-{{ section_id }}-{{ card_product.id }}"
-                class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}"
-              >
-                {{- 'products.product.sold_out' | t -}}
-              </span>
-            {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
-              <span
-                id="Badge-{{ section_id }}-{{ card_product.id }}"
-                class="badge badge--bottom-left badge--sale color-{{ settings.sale_badge_color_scheme }}"
-              >
-                {{-
-                  card_product.compare_at_price
-                  | minus: card_product.price
-                  | times: 100.0
-                  | divided_by: card_product.compare_at_price
-                  | floor
-                -}}
-                %
-              </span>
-            {%- endif -%}
+              {%- if card_product.available == false -%}
+                <span
+                  id="Badge-{{ section_id }}-{{ card_product.id }}"
+                  class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}"
+                >
+                  {{- 'products.product.sold_out' | t -}}
+                </span>
+              {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
+                <span
+                  id="Badge-{{ section_id }}-{{ card_product.id }}"
+                  class="badge badge--bottom-left badge--sale color-{{ settings.sale_badge_color_scheme }}"
+                >
+                  {{-
+                    card_product.compare_at_price
+                    | minus: card_product.price
+                    | times: 100.0
+                    | divided_by: card_product.compare_at_price
+                    | floor
+                  -}}
+                  %
+                </span>
+              {%- endif -%}
             {%- endunless -%}
           </div>
         </div>
