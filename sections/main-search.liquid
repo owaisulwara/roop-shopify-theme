@@ -321,7 +321,8 @@
                 {%- endfor -%}
               </ul>
               {%- if paginate.pages > 1 -%}
-                {% render 'pagination', paginate: paginate %}
+                {% comment %} {% render 'pagination', paginate: paginate %} {% endcomment %}
+                {% render 'loadmore', paginate: paginate, collection: collection %}
               {%- endif -%}
             </div>
           {%- endif -%}
@@ -364,7 +365,7 @@
           "label": "t:sections.main-search.settings.columns_mobile.options__2.label"
         }
       ]
-    },    
+    },
     {
       "type": "header",
       "content": "t:sections.main-search.settings.header__1.content"
