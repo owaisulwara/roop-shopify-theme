@@ -94,7 +94,7 @@
         {%- unless product.price_varies == false and product.compare_at_price_varies %}
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
           <span>
-            <s class="price-item price-item--regular">
+            <s class="price-item price-item--regular" style="color: gray;">
               {% if settings.currency_code_enabled %}
                 {{ compare_at_price | money_with_currency }}
               {% else %}
@@ -118,7 +118,8 @@
     {%- if show_badges and product.metafields.custom.coming_soon.value != true -%}
       <span class="badge price__badge-sale badge--sale color-{{ settings.sale_badge_color_scheme }}">
         {%- if compare_at_price > price -%}
-          {{- compare_at_price | minus: price | times: 100.0 | divided_by: compare_at_price | floor -}}% OFF
+          {{- compare_at_price | minus: price | times: 100.0 | divided_by: compare_at_price | floor -}}
+          % OFF
         {%- else -%}
           {{ 'products.product.on_sale' | t }}
         {%- endif -%}
