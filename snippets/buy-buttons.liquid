@@ -70,6 +70,12 @@
               assign quantity_rule_soldout = true
             endif
           -%}
+
+          <p class="product-form__free-delivery" role="status">
+            <span class="product-form__free-delivery-text">Free delivery applied</span>
+            <span class="product-form__free-delivery-icon" aria-hidden="true">🚚</span>
+          </p>
+
           <button
             id="ProductSubmitButton-{{ section_id }}"
             type="submit"
