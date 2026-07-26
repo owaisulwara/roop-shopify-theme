@@ -1,53 +1,81 @@
 /* swatch-input lives in its own file for reusability of the swatch in other areas than the product form context */
 .swatch-input__input + .swatch-input__label {
   --swatch-input--border-radius: 50%;
-  display: inline-block;
-  max-width: 100%;
-  border-radius: var(--swatch-input--border-radius);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 7.2rem;
   cursor: pointer;
+  forced-color-adjust: none;
+}
+
+.swatch-input__swatch {
+  display: block;
+  border-radius: var(--swatch-input--border-radius);
   outline-offset: 0.2rem;
   outline-color: transparent;
   outline-style: solid;
   transition-property: outline-color, outline-width, box-shadow;
   transition-duration: var(--duration-short);
   transition-timing-function: ease;
-  forced-color-adjust: none;
 }
 
 .swatch-input__input + .swatch-input__label.swatch-input__label--square {
   --swatch-input--border-radius: 0.2rem;
 }
 
-/* Active state */
-.swatch-input__input:active + .swatch-input__label,
-.swatch-input__input:checked + .swatch-input__label {
+.swatch-input__input + .swatch-input__label.swatch-input__label--square .swatch-input__swatch {
+  --swatch-input--border-radius: 0.2rem;
+}
+
+/* Option value under the swatch */
+.swatch-input__text {
+  display: block;
+  margin-top: 0.5rem;
+  max-width: 100%;
+  font-size: 1.1rem;
+  line-height: 1.25;
+  letter-spacing: 0.02rem;
+  text-align: center;
+  color: rgba(var(--color-foreground), 0.8);
+  word-break: break-word;
+}
+
+.swatch-input__input:checked + .swatch-input__label .swatch-input__text {
+  color: rgb(var(--color-foreground));
+  font-weight: 600;
+}
+
+/* Active state — outline only the swatch, not the text */
+.swatch-input__input:active + .swatch-input__label .swatch-input__swatch,
+.swatch-input__input:checked + .swatch-input__label .swatch-input__swatch {
   outline: 0.1rem solid rgb(var(--color-foreground));
 }
 
 /* Hover state */
-.swatch-input__input + .swatch-input__label:hover,
-.swatch-input__input:hover + .swatch-input__label {
+.swatch-input__input + .swatch-input__label:hover .swatch-input__swatch,
+.swatch-input__input:hover + .swatch-input__label .swatch-input__swatch {
   outline: 0.2rem solid rgba(var(--color-foreground), 0.4);
 }
 
 /* Focus visible */
-.swatch-input__input:focus-visible + .swatch-input__label {
+.swatch-input__input:focus-visible + .swatch-input__label .swatch-input__swatch {
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   box-shadow: 0 0 0 0.2rem rgb(var(--color-background)), 0 0 0.1rem 0.5rem rgba(var(--color-foreground), 0.25);
 }
 
 /* Active and focused */
-.swatch-input__input:active:focus-visible + .swatch-input__label,
-.swatch-input__input:checked:focus-visible + .swatch-input__label {
+.swatch-input__input:active:focus-visible + .swatch-input__label .swatch-input__swatch,
+.swatch-input__input:checked:focus-visible + .swatch-input__label .swatch-input__swatch {
   outline: 0.1rem solid rgb(var(--color-foreground));
   box-shadow: 0 0 0 0.2rem rgb(var(--color-background)), 0 0 0.1rem 0.4rem rgba(var(--color-foreground), 0.25);
 }
 
 /* Visually disabled */
-.swatch-input__input.visually-disabled:not(:active):not(:checked) + .swatch-input__label {
+.swatch-input__input.visually-disabled:not(:active):not(:checked) + .swatch-input__label .swatch-input__swatch {
   transition: none;
 }
-.swatch-input__input.visually-disabled:not(:active):not(:checked) + .swatch-input__label:hover {
+.swatch-input__input.visually-disabled:not(:active):not(:checked) + .swatch-input__label:hover .swatch-input__swatch {
   outline: none;
 }
 
@@ -57,21 +85,26 @@
 }
 
 /* Overrides for swatch snippet when used inside disabled swatch-input */
-.swatch-input__input:disabled + .swatch-input__label > .swatch,
-.swatch-input__input.visually-disabled + .swatch-input__label > .swatch {
+.swatch-input__input:disabled + .swatch-input__label .swatch,
+.swatch-input__input.visually-disabled + .swatch-input__label .swatch {
   position: relative;
   overflow: hidden;
 }
 
 /* Disabled styles */
-.swatch-input__input:disabled + .swatch-input__label > .swatch,
-.swatch-input__input.visually-disabled + .swatch-input__label > .swatch {
+.swatch-input__input:disabled + .swatch-input__label .swatch,
+.swatch-input__input.visually-disabled + .swatch-input__label .swatch {
   opacity: 0.4;
 }
 
+.swatch-input__input:disabled + .swatch-input__label .swatch-input__text,
+.swatch-input__input.visually-disabled + .swatch-input__label .swatch-input__text {
+  opacity: 0.5;
+}
+
 /* Display crossed out line over swatch when input is disabled */
-.swatch-input__input:disabled + .swatch-input__label > .swatch::after,
-.swatch-input__input.visually-disabled + .swatch-input__label > .swatch::after {
+.swatch-input__input:disabled + .swatch-input__label .swatch::after,
+.swatch-input__input.visually-disabled + .swatch-input__label .swatch::after {
   /* Diagonal of a square = length of the side * sqrt(2)  */
   --diagonal--size: calc(var(--swatch-input--size) * 1.414);
   --crossed-line--size: 0.1rem;
