@@ -24,13 +24,28 @@
     {%- for option in product.options_with_values -%}
       {%- liquid
         assign swatch_count = option.values | map: 'swatch' | compact | size
-        assign picker_type = block.settings.picker_type
+        assign variant_image_count = 0
+        for option_value in option.values
+          if option_value.variant.featured_media != blank or option_value.variant.image != blank
+            assign variant_image_count = variant_image_count | plus: 1
+          endif
+        endfor
 
-        if swatch_count > 0 and block.settings.swatch_shape != 'none'
-          if block.settings.picker_type == 'dropdown'
-            assign picker_type = 'swatch_dropdown'
-          else
-            assign picker_type = 'swatch'
+        assign picker_type = block.settings.picker_type
+        assign selected_fallback_image = null
+        if option.selected_value.variant.featured_media != blank
+          assign selected_fallback_image = option.selected_value.variant.featured_media
+        elsif option.selected_value.variant.image != blank
+          assign selected_fallback_image = option.selected_value.variant.image
+        endif
+
+        if block.settings.swatch_shape != 'none'
+          if swatch_count > 0 or variant_image_count > 0
+            if block.settings.picker_type == 'dropdown'
+              assign picker_type = 'swatch_dropdown'
+            else
+              assign picker_type = 'swatch'
+            endif
           endif
         endif
       -%}
@@ -70,7 +85,11 @@
                 data-selected-value
                 class="dropdown-swatch"
               >
-                {% render 'swatch', swatch: option.selected_value.swatch, shape: block.settings.swatch_shape %}
+                {% render 'swatch',
+                  swatch: option.selected_value.swatch,
+                  shape: block.settings.swatch_shape,
+                  fallback_image: selected_fallback_image
+                %}
               </span>
             {%- endif -%}
             <select

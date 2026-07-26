@@ -150,3 +150,19 @@ variant-selects {
   }
 }
 /* End custom styles for Swatch display type */
+
+/* Button options with variant image fallback */
+.product-form__option-label--image {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.product-form__option-image {
+  width: 2.4rem;
+  height: 2.4rem;
+  object-fit: cover;
+  border-radius: 0.3rem;
+  border: 0.1rem solid rgba(var(--color-foreground), 0.12);
+  flex-shrink: 0;
+}
