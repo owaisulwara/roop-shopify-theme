@@ -38,13 +38,6 @@
           "type": "quantity_selector",
           "settings": {}
         },
-        "text_qwg3BW": {
-          "type": "text",
-          "settings": {
-            "text": "Free delivery applied 🚚",
-            "text_style": "subtitle"
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -112,7 +105,6 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "text_qwg3BW",
         "buy_buttons",
         "wa_for_roop_whatsapp_btn_ErqVqt",
         "popup_GrYkXU",

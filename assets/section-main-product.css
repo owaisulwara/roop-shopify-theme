@@ -217,22 +217,16 @@ product-info {
 	text-align: center;
 	animation:
 		free-delivery-fade 0.6s ease both,
-		free-delivery-shine 3.2s ease-in-out infinite;
-}
-
-.product-form__free-delivery-icon {
-	display: inline-block;
-	animation: free-delivery-drive 2.4s ease-in-out infinite;
+		free-delivery-shine 3.2s ease-in-out infinite,
+		free-delivery-shake 2.8s ease-in-out 0.6s infinite;
 }
 
 @keyframes free-delivery-fade {
 	from {
 		opacity: 0;
-		transform: translateY(6px);
 	}
 	to {
 		opacity: 1;
-		transform: translateY(0);
 	}
 }
 
@@ -246,16 +240,26 @@ product-info {
 	}
 }
 
-@keyframes free-delivery-drive {
+@keyframes free-delivery-shake {
 	0%,
+	12%,
 	100% {
 		transform: translateX(0);
 	}
-	40% {
+	2% {
+		transform: translateX(-4px);
+	}
+	4% {
 		transform: translateX(4px);
 	}
-	70% {
-		transform: translateX(-2px);
+	6% {
+		transform: translateX(-3px);
+	}
+	8% {
+		transform: translateX(3px);
+	}
+	10% {
+		transform: translateX(-1px);
 	}
 }
 
