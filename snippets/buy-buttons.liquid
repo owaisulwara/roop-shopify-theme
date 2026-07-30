@@ -71,10 +71,21 @@
             endif
           -%}
 
-          <p class="product-form__free-delivery" role="status">
-            <span class="product-form__free-delivery-text">Free delivery applied for you</span>
-            <span class="product-form__free-delivery-icon" aria-hidden="true">🚚</span>
-          </p>
+          {%- unless product.selected_or_first_available_variant.available == false
+            or quantity_rule_soldout
+            or product.selected_or_first_available_variant == null
+            or product.metafields.custom.coming_soon == true
+          -%}
+            <button
+              type="button"
+              class="product-form__free-delivery"
+              aria-label="{{ 'products.product.add_to_cart' | t }}"
+              onclick="document.getElementById('ProductSubmitButton-{{ section_id }}')?.click()"
+            >
+              <span class="product-form__free-delivery-text">Free delivery applied to this product</span>
+              <span class="product-form__free-delivery-icon" aria-hidden="true">🚚</span>
+            </button>
+          {%- endunless -%}
 
           <button
             id="ProductSubmitButton-{{ section_id }}"

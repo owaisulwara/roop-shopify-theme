@@ -401,5 +401,21 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    {% comment %} Google Reviews Widget {% endcomment %}
+     <script id='merchantWidgetScript' src="https://www.gstatic.com/shopping/merchant/merchantwidget.js" defer></script>
+
+<script>
+  merchantWidgetScript.addEventListener('load', function () {
+    merchantwidget.start({
+      // REQUIRED FIELD
+      merchant_id: 556061837,
+
+      // OPTIONAL FIELDS
+      // Options: 'BOTTOM_RIGHT', 'BOTTOM_LEFT', or 'INLINE'
+      position: 'BOTTOM_RIGHT' 
+    });
+  });
+</script>
   </body>
 </html>

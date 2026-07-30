@@ -56,7 +56,7 @@
       "settings": {
         "logo_position": "top-center",
         "mobile_logo_position": "center",
-        "menu": "main-menu",
+        "menu": "main-menu-copy",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
